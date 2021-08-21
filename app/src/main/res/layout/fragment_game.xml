@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/fragment_game"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@android:color/holo_red_dark"
+>
+
+<TextView
+    android:background="@android:color/holo_red_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/body_instructions"
+    android:textSize="40dp"
+    android:layout_margin="8dp"
+    android:layout_weight="1"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:text="другое задание"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:text="следующий игрок"
+        android:layout_weight="1" />
+</LinearLayout>
+
+
+</LinearLayout>
