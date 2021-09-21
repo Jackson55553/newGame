@@ -6,4 +6,7 @@
     <string name="start">start</string>
     <string name="settings">settings</string>
     <string name="body_instructions">body</string>
+    <string name="hello">Для того чтобы начать развлекаться нажми на старт</string>
+    <string name="player1">Игрок 1</string>
+    <string name="player2">Игрок 2</string>
 </resources>

@@ -1,41 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
 android:id="@+id/fragment_game"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
 android:background="@android:color/holo_red_dark"
 >
-
-<TextView
+<LinearLayout
     android:background="@android:color/holo_red_light"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/body_instructions"
-    android:textSize="40dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     android:layout_margin="8dp"
-    android:layout_weight="1"/>
+    android:layout_weight="1">
+    <TextView
+        android:id="@+id/txt_player"
+        android:layout_gravity="top|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txt_exercise"
+        android:background="@android:color/holo_red_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/hello"
+        android:textSize="40dp"
+        android:layout_margin="8dp"
+        />
+
+</LinearLayout>
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    >
 
     <Button
+        android:id="@+id/btn_other_exercise"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
         android:layout_margin="8dp"
+        android:visibility="gone"
         android:text="другое задание"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_margin="8dp"
+        android:text="старт"
+        android:layout_weight="1"
+        />
 
     <Button
+        android:id="@+id/btn_next_player"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
         android:layout_margin="8dp"
+        android:visibility="gone"
         android:text="следующий игрок"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        />
 </LinearLayout>
 
 

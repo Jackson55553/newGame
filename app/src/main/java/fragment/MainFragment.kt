@@ -1,11 +1,11 @@
 package fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import com.example.newgame.R
 
 
@@ -27,7 +27,7 @@ class MainFragment : Fragment() {
         btn.setOnClickListener { parentFragmentManager
             .beginTransaction()
             .addToBackStack("first")
-            .replace(R.id.main_container, GameFragment())
+            .replace(R.id.main_container, GameFragment.newInstance())
             .commit()}
     }
 }
