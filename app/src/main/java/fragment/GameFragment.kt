@@ -13,8 +13,6 @@ private val data = DataExercise()
 private var bool = false
 private const val PLAYER1 = "Игрок 1"
 private const val PLAYER2 = "Игрок 2"
-private var exercise = data.femaleExercise.random()
-
 
 class GameFragment : Fragment() {
     private var _binding: FragmentGameBinding? = null
@@ -31,9 +29,10 @@ class GameFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val startExercise = data.femaleExercise.random()
         binding.btnStart.setOnClickListener {
             startGame()
-            binding.txtExercise.text = exercise
+            binding.txtExercise.text = startExercise
         }
         binding.btnNextPlayer.setOnClickListener {
             nextPlayer()
